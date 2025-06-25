@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Messages definitions for microservices",
   "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src",
     "prepublishOnly": "pnpm build"
@@ -19,10 +23,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.11.1",
   "devDependencies": {
+    "@biomejs/biome": "^2.0.5",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "@biomejs/biome": "^2.0.5"
   }
 }
